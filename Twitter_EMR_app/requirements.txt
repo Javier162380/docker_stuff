@@ -1,0 +1,6 @@
+requests
+requests-oauthlib
+boto3
+datetime
+mrjob
+pymongo
