@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mongo:
+    image: mongo
+  tweetanalysis:
+    image: javier162380/twitter_emr_sentiment_analysis
+    depends_on:
+      - mongo
+    volumes:
+      - /tmp:/tmp
+    links:
+      - mongo:db
